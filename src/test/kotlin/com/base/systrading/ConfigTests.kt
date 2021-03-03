@@ -12,11 +12,9 @@ class ConfigTests {
     fun environmentLoadTest() {
         val env = dotenv()
         val accessToken = env["ACCESS_TOKEN"]
-        val secretKey = env["SECRET_KEY"]
         val nothing = env["NOTHING"]
 
         assertThat(accessToken).isNotNull()
-        assertThat(secretKey).isNotNull()
         assertThat(nothing).isNull()
     }
 }

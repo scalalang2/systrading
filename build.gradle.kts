@@ -27,7 +27,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
     compile("io.github.cdimascio:dotenv-kotlin:6.2.2")
-
+    implementation("com.google.code.gson:gson:2.8.6")
 
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     runtimeOnly("com.h2database:h2")
