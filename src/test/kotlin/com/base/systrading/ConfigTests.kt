@@ -13,7 +13,6 @@ class ConfigTests {
         val env = dotenv()
         val accessToken = env["ACCESS_TOKEN"]
         val nothing = env["NOTHING"]
-
         assertThat(accessToken).isNotNull()
         assertThat(nothing).isNull()
     }
